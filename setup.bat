@@ -13,4 +13,9 @@ If exist "%ProgramFiles(x86)%\AutoHotkey\AutoHotkey.exe" (
   findstr /g:paste-fix.ahk %UserProfile%\Documents\AutoHotkey.ahk >nul 2>&1
   if errorlevel 1 (echo[ & type paste-fix.ahk) >> %UserProfile%\Documents\AutoHotkey.ahk
 )
+
+If exist "%ProgramFiles%\AutoHotkey\AutoHotkey.exe" (
+  findstr /g:paste-fix.ahk %UserProfile%\Documents\AutoHotkey.ahk >nul 2>&1
+  if errorlevel 1 (echo[ & type paste-fix.ahk) >> %UserProfile%\Documents\AutoHotkey.ahk
+)
 echo done.
